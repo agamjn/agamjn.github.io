@@ -1,31 +1,63 @@
 ---
 layout: page
-title: About
 permalink: /
 ---
 
 <div class="about-wrapper">
   <div class="about-content">
-    <p>I'm Samagra, a machine learning engineer and founder of <a href="https://tensorfuse.io/">Tensorfuse</a>, a YC-backed startup building infrastructure for scalable ML. My work focuses on making Machine Learning more accessible and efficient for researchers and engineers.</p>
+    <p>I am an entrepreneur, developer and the founder of <a class="underline" href="https://tensorfuse.io/">Tensorfuse</a>.</p>
 
-    <p>Previously, I worked on distributed systems and networking at <a href="https://research.adobe.com/">Adobe Research</a> and <a href="https://snl.cs.ucsb.edu/">UCSB</a>. I hold a degree in Computer Science from <a href="https://iitr.ac.in/">IIT Roorkee</a>, where I developed a passion for the intersection of mathematics and technology.</p>
+    <h5>Some things about me:</h5>
+    <ul>
+        <li>Grew up in a <a class="underline" href="https://en.wikipedia.org/wiki/Ashoknagar_(Madhya_Pradesh)">small town</a> in India.</li>
+        <li>Did my engineering from <a class="underline" href="https://en.wikipedia.org/wiki/IIT_Roorkee">IIT Roorkee</a>.</li>
+        <li>Was a part of the Y Combinator W24 batch.</li>
+        <li>Previously worked on semiconductor devices & computer vision. Find my publications <a class="underline" href="https://scholar.google.com/citations?hl=en&user=PNfj9uUAAAAJ">here</a>.</li>
+        <li>I keep travelling between San Francisco and Bangalore.</li>
+        <li>Currently working on making ML infra more accessible and efficient for researchers and engineers.</li>
+        <li>When I am not working, you’ll find me playing Badminton, Ukulele and writing.</li>
+    </ul>
 
-    <p>When I'm not programming or writing, you'll find me playing chess, exploring <a href="https://en.wikipedia.org/wiki/Sanskrit_literature">Sanskrit literature</a>, or experimenting with <a href="https://en.wikipedia.org/wiki/Indian_cuisine">Indian cuisine</a>. I'm always eager to connect with others passionate about technology and its potential to shape our future.</p>
+        <h5>Some things I believe:</h5>
+    <ul>
+        <li>One should be passionate about the problem and not the tools.
+            <ul>
+                <li>Programming, design, bio-engineering, sales, marketing etc. are mere tools.</li>
+                <li>Most people get attached to these tools rather than the problem.</li>
+                <li>Develop passion for solving hunger, poverty, climate change or whatever and learn the tools necessary to solve them for yourselves, your country and the world.</li>
+            </ul>
+        </li>
+        <li>Consume less, create more
+            <ul>
+                <li>Consumption dopamine is cheap</li>
+                <li>Dopamine from creation elevates</li>
+            </ul>
+        </li>
+        <li>Life can be a quest or a race.
+            <ul>
+                <li>If you’re innately curious, you’ll make it a quest</li>
+                <li>Else, you’ll always end up competing as if you’re part of a constant race.</li>
+            </ul>
+        </li>
+    </ul>
 
-    <p>Feel free to reach out if you'd like to discuss AI, startups, or exchange book recommendations!</p>
   </div>
 
-  <div class="about-image-container">
+  <!-- <div class="about-image-container">
     <div class="about-image">
-      <img src="/assets/images/test.jpg" alt="Samagra" class="img-responsive">
+      <img src="/assets/images/agam_zoo.jpg" alt="agam" class="img-responsive">
     </div>
-    <div class="image-caption">
-      <p>"Mathematics, computer science, and the arts are insanely related. They're all creative expressions." - Sebastian Thrun</p>
-    </div>
-  </div>
+  </div> -->
+
 </div>
 
+
 <style>
+
+  .underline {
+    text-decoration: underline;
+  }
+
   .about-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -33,13 +65,14 @@ permalink: /
     gap: 2rem;
   }
   .about-content {
-    flex: 1 1 300px;
+    flex: 1 1 100%;
   }
   .about-image-container {
     flex: 0 0 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    order: -1;
   }
   .about-image {
     width: 300px;
@@ -51,13 +84,6 @@ permalink: /
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .image-caption {
-    margin-top: 15px;
-    font-style: italic;
-    text-align: center;
-    font-size: 0.9em;
-    max-width: 300px;
   }
   @media screen and (max-width: 768px) {
     .about-wrapper {

@@ -1,12 +1,12 @@
-title: Samagra Sharma
+title: Agam Jain
 author:
-  name: Samagra Sharma
-  email: samagra14@gmail.com
+  name: Agam Jain
+  email: agam.jn30@gmail.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  I am the founder and CEO of Tensorfuse Inc. At Tensorfuse, we are building the container technology for the GPU era.
+  I am the founder of Tensorfuse Inc. At Tensorfuse, we are building the container technology for the GPU era.
 
 # Build settings
 
@@ -28,15 +28,13 @@ plugins:
 # in order as they should show up.
 header_pages:
   - blogs.md
-  - interesting_links.md
-
 # Set to `true` to show excerpts on the homepage.
 show_excerpts: true
 
 disqus:
-  shortname: samagra14
+  shortname: agamjn
 
-google_analytics: G-LVV697V0CN
+#google_analytics: G-LVV697V0CN
 
 # Minima specific settings, which are only available from Minima 3.0 onward.
 minima:
@@ -61,18 +59,18 @@ minima:
 #    - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
 #    - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
 #    - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
-    - { platform: github,         user_url: "https://github.com/samagra14" }
+    - { platform: github,         user_url: "https://github.com/agamjn" }
 #    - { platform: gitlab,         user_url: "https://gitlab.com/jekyll" }
 #    - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
-#    - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
+    - { platform: instagram,      user_url: "https://www.instagram.com/agam_jn/" }
 #    - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
-    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/samagra-sharma-4476bb135/" }
+    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/agam-jn/" }
 #    - { platform: microdotblog,   user_url: "https://micro.blog/jekyll" }
 #    - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
 #    - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
 #    - { platform: telegram,       user_url: "https://t.me/jekyll" }
 #    - { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
-    - { platform: x,              user_url: "https://x.com/samagra_sharma" }
+    - { platform: x,              user_url: "https://x.com/agam_jn" }
 #    - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
 
 
