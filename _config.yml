@@ -6,7 +6,7 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  I am the founder of Tensorfuse Inc. At Tensorfuse, we are building the container technology for the GPU era.
+  I am the founder of Tensorfuse. At Tensorfuse, we are building the container technology for the GPU era.
 
 # Build settings
 
