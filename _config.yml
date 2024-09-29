@@ -34,7 +34,7 @@ show_excerpts: true
 disqus:
   shortname: agamjn
 
-#google_analytics: G-LVV697V0CN
+#google_analytics: 
 
 # Minima specific settings, which are only available from Minima 3.0 onward.
 minima:
