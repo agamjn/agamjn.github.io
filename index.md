@@ -43,11 +43,11 @@ permalink: /
 
   </div>
 
-  <!-- <div class="about-image-container">
+  <div class="about-image-container">
     <div class="about-image">
       <img src="/assets/images/agam_zoo.jpg" alt="agam" class="img-responsive">
     </div>
-  </div> -->
+  </div>
 
 </div>
 
@@ -72,7 +72,7 @@ permalink: /
     display: flex;
     flex-direction: column;
     align-items: center;
-    order: -1;
+    /* order: -1; */ /* Commented out to keep image on right side */
   }
   .about-image {
     width: 300px;
