@@ -5,6 +5,11 @@ permalink: /
 
 <div class="about-wrapper">
   <div class="about-content">
+    <div class="about-image-container">
+      <div class="about-image">
+        <img src="/assets/images/agam.jpg" alt="agam" class="img-responsive">
+      </div>
+    </div>
     <p>I am an entrepreneur, developer and the founder of <a class="underline" href="https://tensorfuse.io/">Tensorfuse</a>.</p>
 
     <h5>Some things about me:</h5>
@@ -18,7 +23,7 @@ permalink: /
         <li>When I am not working, you’ll find me playing Badminton, Ukulele and writing.</li>
     </ul>
 
-        <h5>Some things I believe:</h5>
+    <h5>Some things I believe:</h5>
     <ul>
         <li>One should be passionate about the problem and not the tools.
             <ul>
@@ -42,12 +47,6 @@ permalink: /
     </ul>
 
   </div>
-
-  <!-- <div class="about-image-container">
-    <div class="about-image">
-      <img src="/assets/images/agam_zoo.jpg" alt="agam" class="img-responsive">
-    </div>
-  </div> -->
 
 </div>
 
@@ -73,10 +72,12 @@ permalink: /
     flex-direction: column;
     align-items: center;
     order: -1;
+    float: right;
+    margin-left: 20px;
   }
   .about-image {
-    width: 300px;
-    height: 300px;
+    width: 210px;
+    height: 210px;
     border-radius: 50%;
     overflow: hidden;
   }
