@@ -7,7 +7,7 @@ permalink: /
   <div class="about-content">
     <div class="about-image-container">
       <div class="about-image">
-        <img src="/assets/images/agam.jpg" alt="agam" class="img-responsive">
+        <img src="/assets/images/agam.png" alt="agam" class="img-responsive">
       </div>
     </div>
     <p>I am an entrepreneur, developer and the founder of <a class="underline" href="https://tensorfuse.io/">Tensorfuse</a>.</p>
