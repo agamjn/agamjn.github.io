@@ -8,6 +8,9 @@ author:
 description: >
   I am the founder of Tensorfuse. At Tensorfuse, we are building the infra to run models that will power the next generations of AI agent.
 
+url: "https://agamjn.github.io"
+baseurl: ""
+
 # Build settings
 
 # If you clone the Minima repo and build locally, use this setting.
