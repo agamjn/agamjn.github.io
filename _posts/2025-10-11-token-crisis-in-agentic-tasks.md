@@ -31,7 +31,7 @@ Total? 50-200K tokens. You can't sustain 30 minutes of intensive coding without 
 
 **Web search agents** accumulate context with every iteration. Search → Read → Assess → Search again → Read more. After 10-15 steps, you've maxed out even the largest context windows.
 
-![Token Usage](../../../assets/images/token_usage.png)
+![Token Usage](/assets/images/token_usage.png)
 
 This creates two problems:
 
@@ -65,7 +65,7 @@ Your main context (200K tokens) is like RAM (fast, expensive, limited). External
 
 Here's the architecture:
 
-![memgpt](../../../assets/images/memgpt.png)
+![memgpt](/assets/images/memgpt.png)
 
 **How it manages memory:**
 1. Context hits 70% full → LLM gets a memory pressure warning

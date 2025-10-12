@@ -11,7 +11,7 @@ Currently working on building my startup [Tensorfuse](https://tensorfuse.io/). I
 
 <br>
       
-![blog1.PNG](../../../assets/images/tensorfuse.png)
+![blog1.PNG](/assets/images/tensorfuse.png)
 
 <br>
 

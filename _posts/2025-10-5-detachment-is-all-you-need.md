@@ -27,7 +27,7 @@ So how do you find that peace?
 
 When you can observe the chaos as an independent, external observer, even while you're in the middle of it, you develop this tremendous ability to remain unaffected by it.
 
-![Detachment](../../../assets/images/detachment.png)
+![Detachment](/assets/images/detachment.png)
 
 ## What detachment actually means
 

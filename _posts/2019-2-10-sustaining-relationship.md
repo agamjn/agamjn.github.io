@@ -13,7 +13,7 @@ Before I jump to the main thing, it is important to understand what constitutes 
 
 **Peripheral States:** These are the states that change depending upon the social circumstances we are in. These changes are mainly motivated by us being able to fit into the social sphere of a particular place. We can think of them more in terms of experiences. 
 
-![Test](../../../assets/images/ven.png)
+![Test](/assets/images/ven.png)
 
 **For a sustained relationship, there should be coherence between the central states and a fair amount of divergence between the peripheral states. Now, the first point is pretty much self-explanatory. A competent and responsible person will find it extremely difficult to get along with an incompetent and irresponsible counterpart.** 
 

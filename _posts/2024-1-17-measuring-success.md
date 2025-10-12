@@ -23,7 +23,7 @@ Our current quantification of this transition is like a unit step function that 
 <br>
       
 
-![blog1.PNG](../../../assets/images/hedonic.png)
+![blog1.PNG](/assets/images/hedonic.png)
 
 <br>
 
@@ -31,7 +31,7 @@ The downside to approach is it fails to build an overall sense of security. This
 
 <br>
 
-![blog2.PNG](../../../assets/images/continuous.png)
+![blog2.PNG](/assets/images/continuous.png)
 
 <br>
 
