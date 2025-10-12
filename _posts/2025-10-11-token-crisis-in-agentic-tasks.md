@@ -123,9 +123,6 @@ Example: START → WIZARD → OLD_MAN → CASTLE → TREASURE
 
 **Why memory wins:** Searches past messages on-demand instead of trying to fit everything in context.
 
-![Performance Comparison - insert chart]
-
-
 ### When to use what
 
 Here's my decision framework based on building with both approaches.
@@ -152,21 +149,21 @@ These don't solve the fundamental scaling problem, but they help.
 
 ### The bottom line
 
-Context windows grew 20x (from 8K to 200K and beyond). But agentic tasks grew faster. Coding sessions routinely hit 50-200K tokens. Research queries can exceed 2M tokens. **We're back to hitting limits, just at a bigger scale.**
+Context windows grew 20x (from 8K to 200K and beyond). But agentic tasks grew faster. Coding sessions routinely hit 50-200K tokens. Research queries can exceed 2M tokens.
 
 **RAG works great** when one retrieval finds the answer. It's fast, simple, and proven. But it breaks down for multi-hop reasoning and long-running tasks. One-shot retrieval is the bottleneck.
 
 **Memory-based approaches flip the script.** Instead of retrieve-once-and-hope, the LLM manages what stays in context and what gets stored externally. Multiple retrieval attempts. Iterative refinement. 
 
-**The performance gap is clear:**
+The performance gap is clear:
 - Multi-hop tasks: 100% vs 0%
 - Long conversations: 92% vs 32%
 - Large document sets: 65% vs <50%
 
 **Key takeaways:**
-- **Use RAG for:** Simple queries, speed-critical tasks
-- **Use memory for:** Long-running agents, multi-step reasoning, complex research
-- **Most production systems need both**
+- Use RAG for: Simple queries, speed-critical tasks
+- Use memory for: Long-running agents, multi-step reasoning, complex research
+- Most production systems need both
 
 ---
 
