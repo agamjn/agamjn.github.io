@@ -2,7 +2,8 @@
 layout: post
 title: "Social Validation"
 author: Agam Jain
-show_on: Life.journal
+show_on: Articles
+category: Philosophy
 ---
 
 You heard a good song. 

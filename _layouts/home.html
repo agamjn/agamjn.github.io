@@ -11,6 +11,14 @@ layout: base
 
   {{ content }}
 
+  {%- if page.title == "Articles" -%}
+    <div class="filter-buttons" style="margin-bottom: 20px;">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Technical">Technical</button>
+      <button class="filter-btn" data-filter="Philosophy">Philosophy</button>
+    </div>
+  {%- endif -%}
+
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
@@ -25,7 +33,7 @@ layout: base
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
         {%- if post.show_on == page.title or post.show_on == nil -%}
-          <li>
+          <li class="post-item" data-category="{{ post.category | default: 'all' }}">
             <span class="post-meta">
               {%- if post.show_on == "Projects" -%}
                 {%- if post.start_date and post.end_date -%}
@@ -70,3 +78,72 @@ layout: base
   {%- endif %}
 </div>
 
+{%- if page.title == "Articles" -%}
+<style>
+  .filter-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+    border: 2px solid #828282;
+    background-color: white;
+    color: #828282;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+
+  .filter-btn:hover {
+    background-color: #f0f0f0;
+  }
+
+  .filter-btn.active {
+    background-color: rgb(248, 133, 102);
+    color: white;
+    border-color: rgb(248, 133, 102);
+  }
+
+  .post-item {
+    transition: opacity 0.3s ease;
+  }
+
+  .post-item.hidden {
+    display: none;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const postItems = document.querySelectorAll('.post-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        // Remove active class from all buttons
+        filterBtns.forEach(b => b.classList.remove('active'));
+        // Add active class to clicked button
+        this.classList.add('active');
+
+        const filter = this.getAttribute('data-filter');
+
+        // Filter posts
+        postItems.forEach(post => {
+          const category = post.getAttribute('data-category');
+
+          if (filter === 'all') {
+            post.classList.remove('hidden');
+          } else if (category === filter) {
+            post.classList.remove('hidden');
+          } else {
+            post.classList.add('hidden');
+          }
+        });
+      });
+    });
+  });
+</script>
+{%- endif -%}

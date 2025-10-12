@@ -2,7 +2,8 @@
 layout: post
 title: "RAG vs Memory: Addressing Token Crisis in Agentic Tasks"
 author: Agam Jain
-show_on: Life.journal
+show_on: Articles
+category: Technical
 ---
 
 *Context windows grew 20x. Token consumption grew faster. Here's why RAG alone isn't enough and what memory-based approaches offer.*

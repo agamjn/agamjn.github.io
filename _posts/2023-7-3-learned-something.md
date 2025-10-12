@@ -2,7 +2,8 @@
 layout: post
 title: "I learned something today"
 author: Agam Jain
-show_on: Life.journal
+show_on: Articles
+category: Philosophy
 ---
 
 I learned something today,

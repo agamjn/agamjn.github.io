@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Life.journal
+title: Articles
 permalink: /journal/
 ---
 

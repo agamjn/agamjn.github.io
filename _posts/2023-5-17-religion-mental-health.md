@@ -2,7 +2,8 @@
 layout: post
 title: "Mental Health and Religion"
 author: Agam Jain
-show_on: Life.journal
+show_on: Articles
+category: Philosophy
 ---
 
 After the attack of 9/11, more than 90% of Americans turn to religion to cope up with the stress and bible sales rose about 27%. This forms the basis of my argument that, "Is religion a better resource to cope up with stress than atheism?"

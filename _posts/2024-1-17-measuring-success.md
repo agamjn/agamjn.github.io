@@ -2,7 +2,8 @@
 layout: post
 title: "Measuring Success"
 author: Agam Jain
-show_on: Life.journal
+show_on: Articles
+category: Philosophy
 ---
 
 ✔ Got 10 GPA in 10th standard                    

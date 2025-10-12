@@ -2,7 +2,8 @@
 layout: post
 title: "Movies, Music and Sports - The Holy Trio"
 author: Agam Jain
-show_on: Life.journal
+show_on: Articles
+category: Philosophy
 ---
 
 I watch around 2-3 movies every week. Almost all of the time I listen to one or the other type of music, and I can talk for hours about why India lost the 2021 WTC final against New Zealand. I am invested in them so much that it feels like they have become a part of life. And it's more than just the investment of time. It is about the way these things shape our thoughts, ideas, and actions. To England fans beating Italy fans after the Euro defeat, to people imitating Joker to an extent where it inspires crimes, to people feeling goosebumps every time they hear their National Anthem. You see, Music, Movies, and Sports alter our behaviour in so many different ways, yet most of us choose to consume this content without actually being aware of it or conscious enough to find out why we watch this stuff.
