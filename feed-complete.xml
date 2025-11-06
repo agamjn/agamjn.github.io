@@ -1,0 +1,55 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
+  <link href="{{ site.url }}/feed-complete.xml" rel="self" type="application/atom+xml" />
+  <link href="{{ site.url }}/" rel="alternate" type="text/html" />
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>{{ site.url }}/feed-complete.xml</id>
+  <title type="html">{{ site.title | xml_escape }}</title>
+  <subtitle>{{ site.description | xml_escape }}</subtitle>
+  <author>
+    <name>{{ site.author.name | xml_escape }}</name>
+    <email>{{ site.author.email | xml_escape }}</email>
+  </author>
+
+  {% comment %} Include all blog posts {% endcomment %}
+  {% for post in site.posts %}
+  <entry>
+    <title type="html">{{ post.title | xml_escape }}</title>
+    <link href="{{ site.url }}{{ post.url }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}" />
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <id>{{ site.url }}{{ post.id }}</id>
+    <content type="html" xml:base="{{ site.url }}{{ post.url }}">{{ post.content | xml_escape }}</content>
+    <author>
+      <name>{{ site.author.name | xml_escape }}</name>
+    </author>
+    {% for category in post.categories %}
+    <category term="{{ category | xml_escape }}" />
+    {% endfor %}
+    <summary type="html">{{ post.excerpt | xml_escape }}</summary>
+  </entry>
+  {% endfor %}
+
+  {% comment %} Include all pages (excluding special ones) {% endcomment %}
+  {% for page in site.pages %}
+    {% unless page.url contains '/404' or page.url contains 'feed' or page.path contains 'README' or page.path contains 'CODE_OF_CONDUCT' or page.path contains 'Gemfile' or page.path contains '.sass' or page.path contains '_layouts' or page.path contains '_includes' %}
+  <entry>
+    <title type="html">{{ page.title | default: page.name | xml_escape }}</title>
+    <link href="{{ site.url }}{{ page.url }}" rel="alternate" type="text/html" title="{{ page.title | default: page.name | xml_escape }}" />
+    <published>{{ page.date | default: site.time | date_to_xmlschema }}</published>
+    <updated>{{ page.date | default: site.time | date_to_xmlschema }}</updated>
+    <id>{{ site.url }}{{ page.url }}</id>
+    <content type="html" xml:base="{{ site.url }}{{ page.url }}">{{ page.content | xml_escape }}</content>
+    <author>
+      <name>{{ site.author.name | xml_escape }}</name>
+    </author>
+    <category term="Page" />
+    <summary type="html">{{ page.excerpt | default: page.content | truncatewords: 50 | xml_escape }}</summary>
+  </entry>
+    {% endunless %}
+  {% endfor %}
+</feed>
