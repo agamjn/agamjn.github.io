@@ -34,9 +34,9 @@ layout: null
   </entry>
   {% endfor %}
 
-  {% comment %} Include all pages (excluding special ones) {% endcomment %}
+  {% comment %} Include only specific public-facing pages {% endcomment %}
   {% for page in site.pages %}
-    {% unless page.url contains '/404' or page.url contains 'feed' or page.path contains 'README' or page.path contains 'CODE_OF_CONDUCT' or page.path contains 'Gemfile' or page.path contains '.sass' or page.path contains '_layouts' or page.path contains '_includes' %}
+    {% if page.path == 'index.md' or page.path == 'projects.md' or page.path == 'journal.md' %}
   <entry>
     <title type="html">{{ page.title | default: page.name | xml_escape }}</title>
     <link href="{{ site.url }}{{ page.url }}" rel="alternate" type="text/html" title="{{ page.title | default: page.name | xml_escape }}" />
@@ -50,6 +50,6 @@ layout: null
     <category term="Page" />
     <summary type="html">{{ page.excerpt | default: page.content | truncatewords: 50 | xml_escape }}</summary>
   </entry>
-    {% endunless %}
+    {% endif %}
   {% endfor %}
 </feed>
