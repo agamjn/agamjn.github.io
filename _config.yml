@@ -25,6 +25,10 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Jekyll Feed settings
+feed:
+  posts_limit: 1000
+
 # Theme-specific settings
 
 # If you want to link only specific pages in your header, use this and add the path to the pages
