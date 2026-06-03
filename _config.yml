@@ -1,4 +1,4 @@
-thititle: Agam Jain
+title: Agam Jain
 author:
   name: Agam Jain
   email: agam.jn30@gmail.com
@@ -6,7 +6,7 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  I am the founder of Tensorfuse. At Tensorfuse, we are building the infra to run models that will power the next generations of AI agent.
+  I am the founder of Tensorfuse, currently building Whip — a platform that lets anyone create, customize, and share AI-powered mini-apps.
 
 url: "https://agamjn.github.io"
 baseurl: ""

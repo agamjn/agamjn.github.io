@@ -10,7 +10,7 @@ permalink: /
         <img src="/assets/images/agam.png" alt="agam" class="img-responsive">
       </div>
     </div>
-    <p>I am an entrepreneur, developer and the founder of <a class="underline" href="https://tensorfuse.io/">Tensorfuse</a>.</p>
+    <p>I am an entrepreneur, developer and the founder of <a class="underline" href="https://tensorfuse.io/">Tensorfuse</a> and <a class="underline" href="https://whip.run">Whip</a>.</p>
 
     <h5>Some things about me:</h5>
     <ul>
@@ -19,7 +19,7 @@ permalink: /
         <li>Was a part of the Y Combinator W24 batch.</li>
         <li>Previously worked on semiconductor devices & computer vision. Find my publications <a class="underline" href="https://scholar.google.com/citations?hl=en&user=PNfj9uUAAAAJ">here</a>.</li>
         <li>I keep travelling between San Francisco and Bangalore.</li>
-        <li>Currently working on making ML infra more accessible and efficient for researchers and engineers.</li>
+        <li>Currently building <a class="underline" href="https://whip.run">Whip</a>, a platform that lets anyone create, customize, and share AI-powered mini-apps.</li>
         <li>When I am not working, you’ll find me playing Badminton, Ukulele and writing.</li>
     </ul>
 
