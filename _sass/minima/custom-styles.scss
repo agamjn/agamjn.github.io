@@ -1,10 +1,10 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
-// Compact, subtle, centered site footer
+// Compact, subtle site footer: subscribe link (left) | social icons (right)
 .site-footer {
   border-top: 1px solid #ececec;
-  padding: 26px 0;
+  padding: 22px 0;
   min-height: 0;
   font-size: 13px;
   line-height: 1.55;
@@ -13,18 +13,10 @@
 
 .site-footer .footer-inner {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 14px;
-}
-
-.site-footer .footer-top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 16px;
   flex-wrap: wrap;
-  gap: 10px 22px;
 }
 
 .site-footer .footer-substack {
@@ -39,20 +31,7 @@
   border-bottom-color: #d9531e;
 }
 
-.site-footer .footer-email {
-  color: #9a9a9a;
-  text-decoration: none;
-}
-.site-footer .footer-email:hover { color: #2a2a2a; }
-
-.site-footer .footer-bio {
-  margin: 0;
-  max-width: 540px;
-  text-align: center;
-  color: #a6a6a6;
-}
-
-// social icons — centered, clearly visible
+// social icons — right side, clearly visible
 .site-footer .footer-social { display: inline-flex; }
 .site-footer .footer-social .social-media-list {
   display: flex;
