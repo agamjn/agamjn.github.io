@@ -1,0 +1,201 @@
+---
+layout: page
+title: The O-1 Visa Lawyer List
+permalink: /o1/
+description: The immigration lawyers founders most recommend for the O-1 visa.
+---
+<style>
+  .o1{--o1-accent:#d9531e;--o1-soft:rgba(217,83,30,.08);--o1-ink:#1a1a1a;--o1-muted:#6c6c6c;--o1-line:#e7e3da;}
+  .o1 .o1-sub{color:var(--o1-muted);font-size:1.05rem;line-height:1.5;max-width:62ch;margin:0 0 1.7rem;}
+  .o1-controls{display:flex;flex-wrap:wrap;gap:14px 16px;align-items:center;margin-bottom:20px;}
+  .o1-search{flex:1 1 240px;}
+  .o1-search input{width:100%;font:inherit;font-size:1rem;padding:9px 13px;border:1px solid #d6d2c8;border-radius:7px;background:#fff;color:var(--o1-ink);}
+  .o1-search input::placeholder{color:#a39e91;}
+  .o1-search input:focus{outline:none;border-color:var(--o1-accent);box-shadow:0 0 0 3px var(--o1-soft);}
+  .o1-filters{display:flex;flex-wrap:wrap;gap:8px;}
+  .o1-chip{font:inherit;font-size:.85rem;line-height:1;padding:8px 14px;border:1px solid #d3cfc4;border-radius:999px;background:#fff;color:var(--o1-muted);cursor:pointer;transition:all .15s ease;}
+  .o1-chip:hover{border-color:var(--o1-accent);color:var(--o1-accent);}
+  .o1-chip.is-active{background:var(--o1-accent);border-color:var(--o1-accent);color:#fff;}
+  .o1-count{font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;color:var(--o1-muted);margin:0 0 4px;}
+  .o1-count b{color:var(--o1-accent);font-weight:600;}
+
+  .o1-table{width:100%;border-collapse:collapse;margin:0;font-size:1rem;}
+  .o1-table th,.o1-table td{border:0;background:transparent;text-align:left;vertical-align:top;padding:15px 18px 15px 0;}
+  .o1-table thead th{border-bottom:2px solid var(--o1-ink);font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--o1-muted);font-weight:600;}
+  .o1-table tbody tr:nth-child(even){background:transparent;}
+  .o1-table tbody td{border-bottom:1px solid var(--o1-line);}
+  .o1-table tbody tr.o1-row:hover{background:var(--o1-soft);}
+  .o1-who{width:34%;}
+  .o1-name{font-weight:600;color:var(--o1-ink);}
+  .o1-firm{display:block;color:var(--o1-muted);font-size:.92rem;margin-top:2px;}
+  .o1-spec{display:flex;flex-wrap:wrap;gap:6px;}
+  .o1-pill{font-size:.72rem;color:var(--o1-muted);border:1px solid var(--o1-line);border-radius:4px;padding:2px 8px;white-space:nowrap;}
+  .o1-none{color:#bdb8ab;}
+  .o1-contact a{display:block;width:fit-content;color:var(--o1-ink);text-decoration:none;border-bottom:1px solid #d6d2c8;padding-bottom:1px;margin-bottom:5px;font-size:.92rem;word-break:break-word;}
+  .o1-contact a:hover{color:var(--o1-accent);border-bottom-color:var(--o1-accent);}
+  .o1-empty{display:none;color:var(--o1-muted);padding:26px 0;}
+  .o1-empty.show{display:block;}
+
+  .o1-nr{margin-top:44px;}
+  .o1-nr h2{font-size:1.15rem;margin:0 0 8px;}
+  .o1-nr-list{color:var(--o1-muted);margin:0;line-height:1.7;}
+  .o1-follow{margin-top:38px;font-size:.95rem;}
+  .o1-follow a{color:var(--o1-accent);font-weight:500;text-decoration:none;border-bottom:1px solid transparent;transition:all .15s ease;}
+  .o1-follow a:hover{border-bottom-color:var(--o1-accent);}
+
+  @media (max-width:600px){
+    .o1-table thead{display:none;}
+    .o1-table,.o1-table tbody,.o1-table tr,.o1-table td{display:block;width:100%;}
+    .o1-table tr.o1-row{border-bottom:1px solid var(--o1-ink);padding:14px 0;}
+    .o1-table tbody td{border:0;padding:3px 0;}
+    .o1-table tbody tr.o1-row:hover{background:transparent;}
+    .o1-spec-cell{margin-top:7px;}
+    .o1-contact{margin-top:9px;}
+  }
+</style>
+<div class="o1">
+  <p class="o1-sub">The immigration lawyers and firms founders most often recommend for the O-1 &ldquo;extraordinary ability&rdquo; visa. Search or filter by specialty &mdash; the list is in no particular order.</p>
+
+  <div class="o1-controls">
+    <div class="o1-search">
+      <input id="o1-q" type="search" autocomplete="off" placeholder="Search by name or firm&hellip;" aria-label="Search lawyers">
+    </div>
+    <div class="o1-filters" role="group" aria-label="Filter by specialty">
+      <button class="o1-chip is-active" data-filter="all" aria-pressed="true">All</button>
+      <button class="o1-chip" data-filter="o1" aria-pressed="false">O-1 / EB-1</button>
+      <button class="o1-chip" data-filter="tech" aria-pressed="false">Tech-enabled</button>
+      <button class="o1-chip" data-filter="free" aria-pressed="false">Free consult</button>
+      <button class="o1-chip" data-filter="budget" aria-pressed="false">Budget-friendly</button>
+      <button class="o1-chip" data-filter="complex" aria-pressed="false">Complex / RFEs</button>
+    </div>
+  </div>
+
+  <p class="o1-count"><b id="o1-count">17</b> of 17 shown</p>
+
+  <table class="o1-table">
+    <thead>
+      <tr><th class="o1-who" scope="col">Lawyer / firm</th><th scope="col">Specialty</th><th scope="col">Contact</th></tr>
+    </thead>
+    <tbody id="o1-rows">
+      <tr class="o1-row" data-tags="complex" data-text="ryan wiles bay immigration law complex / rfes">
+        <td class="o1-who"><span class="o1-name">Ryan Wiles</span><span class="o1-firm">Bay Immigration Law</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-pill">Complex / RFEs</span></span></td>
+        <td class="o1-contact"><a href="mailto:ryan@bayimmigrationlaw.com">ryan@bayimmigrationlaw.com</a><a href="https://bayimmigrationlaw.com" target="_blank" rel="noopener noreferrer">bayimmigrationlaw.com</a></td>
+      </tr>
+      <tr class="o1-row" data-tags="free" data-text="sophie alcorn alcorn law free consult">
+        <td class="o1-who"><span class="o1-name">Sophie Alcorn</span><span class="o1-firm">Alcorn Law</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-pill">Free consult</span></span></td>
+        <td class="o1-contact"><a href="mailto:sophie@alcorn.law">sophie@alcorn.law</a><a href="https://alcorn.law" target="_blank" rel="noopener noreferrer">alcorn.law</a></td>
+      </tr>
+      <tr class="o1-row" data-tags="o1 budget" data-text="sweta khandelwal  o-1 / eb-1 budget-friendly">
+        <td class="o1-who"><span class="o1-name">Sweta Khandelwal</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-pill">O-1 / EB-1</span><span class="o1-pill">Budget-friendly</span></span></td>
+        <td class="o1-contact"><a href="mailto:sweta@khandelwalaw.com">sweta@khandelwalaw.com</a><a href="https://khandelwalaw.com" target="_blank" rel="noopener noreferrer">khandelwalaw.com</a></td>
+      </tr>
+      <tr class="o1-row" data-tags="" data-text="christopher fleischut finnan, fleischut &amp; associates">
+        <td class="o1-who"><span class="o1-name">Christopher Fleischut</span><span class="o1-firm">Finnan, Fleischut &amp; Associates</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-none">&mdash;</span></span></td>
+        <td class="o1-contact"><a href="https://fleischut.com" target="_blank" rel="noopener noreferrer">fleischut.com</a></td>
+      </tr>
+      <tr class="o1-row" data-tags="o1" data-text="gali gordon gordon law group o-1 / eb-1">
+        <td class="o1-who"><span class="o1-name">Gali Gordon</span><span class="o1-firm">Gordon Law Group</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-pill">O-1 / EB-1</span></span></td>
+        <td class="o1-contact"><a href="mailto:gali@gordonlawgrouppc.com">gali@gordonlawgrouppc.com</a><a href="https://gordonlawgrouppc.com" target="_blank" rel="noopener noreferrer">gordonlawgrouppc.com</a></td>
+      </tr>
+      <tr class="o1-row" data-tags="o1" data-text="jeff goldman  o-1 / eb-1">
+        <td class="o1-who"><span class="o1-name">Jeff Goldman</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-pill">O-1 / EB-1</span></span></td>
+        <td class="o1-contact"><a href="mailto:jeff@jeffgoldmanimmigration.com">jeff@jeffgoldmanimmigration.com</a><a href="https://jeffgoldmanimmigration.com" target="_blank" rel="noopener noreferrer">jeffgoldmanimmigration.com</a></td>
+      </tr>
+      <tr class="o1-row" data-tags="" data-text="phyllis jewell jewell stewart &amp; pratt">
+        <td class="o1-who"><span class="o1-name">Phyllis Jewell</span><span class="o1-firm">Jewell Stewart &amp; Pratt</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-none">&mdash;</span></span></td>
+        <td class="o1-contact"><a href="https://jspvisa.com" target="_blank" rel="noopener noreferrer">jspvisa.com</a></td>
+      </tr>
+      <tr class="o1-row" data-tags="budget complex" data-text="dyan williams  budget-friendly complex / rfes">
+        <td class="o1-who"><span class="o1-name">Dyan Williams</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-pill">Budget-friendly</span><span class="o1-pill">Complex / RFEs</span></span></td>
+        <td class="o1-contact"><a href="https://dyanwilliamslaw.com" target="_blank" rel="noopener noreferrer">dyanwilliamslaw.com</a></td>
+      </tr>
+      <tr class="o1-row" data-tags="o1 tech free" data-text="gale rahul o-1 / eb-1 tech-enabled free consult">
+        <td class="o1-who"><span class="o1-name">Gale</span><span class="o1-firm">Rahul</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-pill">O-1 / EB-1</span><span class="o1-pill">Tech-enabled</span><span class="o1-pill">Free consult</span></span></td>
+        <td class="o1-contact"><a href="mailto:rahul@getgale.app">rahul@getgale.app</a><a href="https://galevisa.com" target="_blank" rel="noopener noreferrer">galevisa.com</a></td>
+      </tr>
+      <tr class="o1-row" data-tags="o1" data-text="becker and lee  o-1 / eb-1">
+        <td class="o1-who"><span class="o1-name">Becker and Lee</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-pill">O-1 / EB-1</span></span></td>
+        <td class="o1-contact"><a href="https://blimmigration.com" target="_blank" rel="noopener noreferrer">blimmigration.com</a></td>
+      </tr>
+      <tr class="o1-row" data-tags="o1 budget" data-text="louis massard  o-1 / eb-1 budget-friendly">
+        <td class="o1-who"><span class="o1-name">Louis Massard</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-pill">O-1 / EB-1</span><span class="o1-pill">Budget-friendly</span></span></td>
+        <td class="o1-contact"><a href="tel:8479893113">(847) 989-3113</a></td>
+      </tr>
+      <tr class="o1-row" data-tags="tech" data-text="plymouth street lisa wehden &amp; lorraine gordon tech-enabled">
+        <td class="o1-who"><span class="o1-name">Plymouth Street</span><span class="o1-firm">Lisa Wehden &amp; Lorraine Gordon</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-pill">Tech-enabled</span></span></td>
+        <td class="o1-contact"><a href="mailto:lisa@plymouthstreet.com">lisa@plymouthstreet.com</a><a href="mailto:lorraine@plymouthstreet.com">lorraine@plymouthstreet.com</a><a href="https://plymouthstreet.com" target="_blank" rel="noopener noreferrer">plymouthstreet.com</a></td>
+      </tr>
+      <tr class="o1-row" data-tags="" data-text="peter roberts roberts immigration">
+        <td class="o1-who"><span class="o1-name">Peter Roberts</span><span class="o1-firm">Roberts Immigration</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-none">&mdash;</span></span></td>
+        <td class="o1-contact"><a href="mailto:proberts@robertsimmigration.com">proberts@robertsimmigration.com</a><a href="https://robertsimmigration.com" target="_blank" rel="noopener noreferrer">robertsimmigration.com</a></td>
+      </tr>
+      <tr class="o1-row" data-tags="" data-text="sarah corstange startup immigration attorney">
+        <td class="o1-who"><span class="o1-name">Sarah Corstange</span><span class="o1-firm">Startup Immigration Attorney</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-none">&mdash;</span></span></td>
+        <td class="o1-contact"><a href="mailto:sarah@corstange.com">sarah@corstange.com</a><a href="https://startupimmigrationattorney.com" target="_blank" rel="noopener noreferrer">startupimmigrationattorney.com</a></td>
+      </tr>
+      <tr class="o1-row" data-tags="tech" data-text="alma aizada marat tech-enabled">
+        <td class="o1-who"><span class="o1-name">Alma</span><span class="o1-firm">Aizada Marat</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-pill">Tech-enabled</span></span></td>
+        <td class="o1-contact"><a href="mailto:aizada@tryalma.ai">aizada@tryalma.ai</a><a href="https://tryalma.ai" target="_blank" rel="noopener noreferrer">tryalma.ai</a></td>
+      </tr>
+      <tr class="o1-row" data-tags="tech" data-text="lighthouse minn kim tech-enabled">
+        <td class="o1-who"><span class="o1-name">Lighthouse</span><span class="o1-firm">Minn Kim</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-pill">Tech-enabled</span></span></td>
+        <td class="o1-contact"><a href="mailto:minn@lighthousehq.com">minn@lighthousehq.com</a><a href="https://lighthousehq.com" target="_blank" rel="noopener noreferrer">lighthousehq.com</a></td>
+      </tr>
+      <tr class="o1-row" data-tags="" data-text="olivia lee minami tamaki">
+        <td class="o1-who"><span class="o1-name">Olivia Lee</span><span class="o1-firm">Minami Tamaki</span></td>
+        <td class="o1-spec-cell"><span class="o1-spec"><span class="o1-none">&mdash;</span></span></td>
+        <td class="o1-contact"><a href="mailto:olee@minamitamaki.com">olee@minamitamaki.com</a><a href="https://minamitamaki.com" target="_blank" rel="noopener noreferrer">minamitamaki.com</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="o1-empty" id="o1-empty">No lawyers match those filters.</p>
+
+  <p class="o1-follow"><a href="https://x.com/agam_jn" target="_blank" rel="noopener">Follow me on X &rarr;</a></p>
+</div>
+<script>
+(function(){
+  var rows=[].slice.call(document.querySelectorAll('#o1-rows .o1-row'));
+  var q=document.getElementById('o1-q');
+  var countEl=document.getElementById('o1-count');
+  var emptyEl=document.getElementById('o1-empty');
+  var chips=[].slice.call(document.querySelectorAll('.o1-chip'));
+  var filter='all';
+  function apply(){
+    var term=(q.value||'').trim().toLowerCase();
+    var shown=0;
+    rows.forEach(function(r){
+      var okF=filter==='all'||(' '+r.getAttribute('data-tags')+' ').indexOf(' '+filter+' ')>-1;
+      var okQ=!term||r.getAttribute('data-text').indexOf(term)>-1;
+      var vis=okF&&okQ;
+      r.style.display=vis?'':'none';
+      if(vis)shown++;
+    });
+    countEl.textContent=shown;
+    emptyEl.classList.toggle('show',shown===0);
+  }
+  q.addEventListener('input',apply);
+  chips.forEach(function(c){
+    c.addEventListener('click',function(){
+      chips.forEach(function(x){x.classList.remove('is-active');x.setAttribute('aria-pressed','false');});
+      c.classList.add('is-active');c.setAttribute('aria-pressed','true');
+      filter=c.getAttribute('data-filter');apply();
+    });
+  });
+})();
+</script>
