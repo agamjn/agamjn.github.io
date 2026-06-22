@@ -1,29 +1,30 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
-// Compact, subtle site footer
+// Compact, subtle, centered site footer
 .site-footer {
   border-top: 1px solid #ececec;
-  padding: 20px 0;
+  padding: 26px 0;
   min-height: 0;
   font-size: 13px;
-  line-height: 1.5;
+  line-height: 1.55;
   color: #9a9a9a;
 }
 
 .site-footer .footer-inner {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  gap: 14px 30px;
-  flex-wrap: wrap;
+  text-align: center;
+  gap: 14px;
 }
 
-.site-footer .footer-left {
+.site-footer .footer-top {
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 10px 22px;
 }
 
 .site-footer .footer-substack {
@@ -46,31 +47,26 @@
 
 .site-footer .footer-bio {
   margin: 0;
-  max-width: 360px;
-  text-align: right;
+  max-width: 540px;
+  text-align: center;
   color: #a6a6a6;
 }
 
-// keep social icons inline, borderless & subtle if present
+// social icons — centered, clearly visible
 .site-footer .footer-social { display: inline-flex; }
 .site-footer .footer-social .social-media-list {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 18px;
   margin: 0;
 }
 .site-footer .footer-social .social-media-list li { margin: 0; border: 0; }
 .site-footer .footer-social .social-media-list li a { border: 0; padding: 0; }
-.site-footer .footer-social .svg-icon { width: 18px; height: 18px; margin: 0; }
-
-@media (max-width: 600px) {
-  .site-footer .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .site-footer .footer-bio {
-    text-align: left;
-    max-width: none;
-  }
+.site-footer .footer-social .svg-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  fill: #6f6f6f;
+  transition: fill .15s ease;
 }
+.site-footer .footer-social a:hover .svg-icon { fill: #d9531e; }
