@@ -1,0 +1,32 @@
+sequenceDiagram
+    autonumber
+    participant U as user
+    participant H as harness
+    participant M as model api
+    participant T as tools
+    participant S as durable state
+    loop each requested action until done or stopped
+        H->>H: validate arguments and evaluate policy
+        opt human approval required
+            H->>S: record exact proposed action and pending approval
+            H->>U: request approval
+            U-->>H: approve or decline
+            H->>S: record decision
+        end
+        alt action authorized
+            H->>S: record pending operation and stable action id
+            H->>T: execute authorized operation
+            Note over T: authenticate external calls and enforce execution boundaries
+            T-->>H: contents, command output, or action result
+            H->>S: record outcome and needed workspace checkpoint
+        else action denied
+            H->>S: record denial
+        end
+        H->>H: append observation and manage context size
+        H->>M: send updated context
+        M-->>H: next tool requests or final response
+    end
+    H->>H: evaluate completion evidence
+    H->>S: save final session and job outcome
+    H-->>U: return diff, test results, and pr status
+

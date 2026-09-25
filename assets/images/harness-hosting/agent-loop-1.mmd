@@ -1,0 +1,15 @@
+sequenceDiagram
+    autonumber
+    participant U as user
+    participant H as harness
+    participant S as files and state
+    participant M as model api
+    U->>H: fix issue 482 and add a regression test
+    H->>S: load session, base instructions, and applicable AGENTS.md
+    S-->>H: instructions and any saved conversation
+    H->>S: discover configured skill descriptions
+    S-->>H: skill names, descriptions, and paths
+    H->>H: register tools and assemble initial context
+    H->>M: send instructions, tools, history, and user query
+    M-->>H: request get_issue and read testing skill
+
