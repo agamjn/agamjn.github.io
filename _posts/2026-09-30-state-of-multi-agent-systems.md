@@ -30,31 +30,29 @@ For example, a Codex CLI agent can read files, edit code and run tests by itself
 
 “Local” and “cloud” describe where the system runs. “Single-agent” and “multi-agent” describe how the work is organized.
 
-## When does adding agents help?
+## Multi-agent systems
 
-It helps to start with the difficulty one agent is facing. Is there too much to investigate? Does the work need an independent review? Or is the project large enough that planning and implementation compete for attention?
+A useful way to understand these systems is to look at how much of the task is known before work begins. Sometimes we can define the output and the main steps upfront. In other cases, we know the goal, but the plan keeps changing as agents work toward it.
 
-These lead to three common arrangements. They overlap, and predate the recent interest in swarms. **January 2024:** LangGraph already described shared workspaces, supervisors and hierarchical teams. [Early collaboration patterns](https://www.langchain.com/blog/langgraph-multi-agent-workflows)
+### Defined tasks: a coordinator delegates to subagents
 
-### A coordinator divides a broad investigation
+When the end state and main steps are clear, a lead agent can divide the work into assignments, launch subagents and combine their results. This works well when those assignments can be completed largely independently.
 
-**June 2025:** Finding board members across S&P 500 technology companies required checking many sources. A single agent searched sequentially and failed to complete the answer. A lead agent with parallel researchers found the answers.
+**Example task: identify the board members of every S&P 500 technology company.** The output is a complete, sourced list. The work can be divided by company, with workers researching their assignments and reporting back to the lead.
 
-Each worker had its own context and tools and could follow useful leads. The coordinator combined the findings. The human did not need to prescribe every search. [Parallel research](https://www.anthropic.com/engineering/multi-agent-research-system)
+**June 2025: Anthropic Research** demonstrated this task. A single agent failed through slow, sequential searches; parallel researchers found the answers. Each worker could adapt its search, while the lead kept the investigation directed toward the required output. [Research example](https://www.anthropic.com/engineering/multi-agent-research-system)
 
-### One agent builds; another checks
+Frameworks such as LangGraph and CrewAI help developers organize these roles and handoffs. **January 2024:** LangGraph already documented supervisors and hierarchical teams, alongside examples using CrewAI. [Workflow patterns](https://www.langchain.com/blog/langgraph-multi-agent-workflows)
 
-**March 2026:** In an application-building experiment, a planner expanded a short request into a specification, a generator built the application, and an evaluator tested it through a browser. Broken interactions became feedback for the next attempt. [Building and evaluating applications](https://www.anthropic.com/engineering/harness-design-long-running-apps)
+### Evolving projects: a swarm coordinates as the plan changes
 
-**April 2026:** Devin used a separate reviewer with fresh context to examine code changes. The coding agent then assessed the findings against the task. The extra agent contributed another check on work the builder might otherwise consider finished. [Devin's review loop](https://cognition.com/blog/multi-agents-working)
+Now consider a goal such as **building a functioning web browser**. We can describe what it should do, but implementation reveals dependencies, design choices and failures that change the next steps. Dividing the project once at the beginning is not enough.
 
-### Agents keep planning as a project develops
+Here, dynamic coordination becomes useful: agents create or revise tasks, pass discoveries between roles and reconcile changes to shared work.
 
-**January 2026:** Building a browser meant discovering new problems while implementing earlier decisions. Cursor separated continuous planning from implementation so workers could focus on individual tasks.
+**January 2026: Cursor's browser experiment** used planners that continuously explored the project and created tasks, workers that implemented them, and a judge that decided whether another cycle was needed. **July 2026:** its later swarm design added clearer ownership of design decisions to prevent agents from building incompatible solutions. [Browser experiment](https://cursor.com/blog/scaling-agents#planners-and-workers), [Swarm coordination](https://cursor.com/blog/agent-swarm-model-economics#split-brain-design)
 
-**February 2026:** Anthropic's compiler experiment used a shared repository and task locks, without a central coordinating agent. So a swarm does not imply one fixed structure, direct communication between every agent, or a separate computer for each. [Cursor's project experiment](https://cursor.com/blog/scaling-agents), [Parallel compiler agents](https://www.anthropic.com/engineering/building-c-compiler)
-
-For a bounded investigation, the difficulty is often coverage. For an evolving project, it also includes keeping changes compatible as the plan develops. In either case, the work needs to be divided, checked and brought back together effectively.
+These are overlapping arrangements. A coordinator can revise its plan, and a swarm can still have a hierarchy. The distinction is how much of the division of work must be discovered and reorganized during execution. Both need a clear way to judge whether the goal has been achieved.
 
 ## What do the results show?
 
