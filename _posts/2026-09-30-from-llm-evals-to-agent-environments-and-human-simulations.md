@@ -144,11 +144,3 @@ Here are a few examples of what these teams actually used.
 **August 2026: Harvey and Applied Compute.** The two companies trained a specialized model for Harvey's legal-document Review Table product. Harvey reported **54.8% lower cost per answer cell than Claude Sonnet 5** on the evaluated tasks, with improved answer quality. The result applies to that particular workload. [Harvey's account](https://www.harvey.ai/blog/training-frontier-review-table-models-with-applied-compute)
 
 **September 2026: Itaú and Simile.** Itaú used simulated customer research around Brazil's recurring-payment experience. The reported research cycle went from **five weeks to four business days**, while concept exploration went from **two weeks to under three hours**. The case describes faster research, without reporting a demonstrated increase in product adoption. [Simile's case study](https://www.simile.com/blog/itau-at-esomar)
-
-### What this means for someone building here
-
-Many of the broad ideas are already available as products.
-
-Braintrust shows how Notion turns production failures into evaluation datasets, and LangSmith advertises automated issue analysis and evaluation creation. Vals Smith turns repositories into coding benchmarks. HUD offers checks for mismatches between a task and its grader, incorrect pass or fail decisions, and agents exploiting the scoring system.
-
-The same is happening with more extensive simulations. Bespoke Labs is building environments containing code, services, communications and other agents. For human research, Simile, Aaru and Artificial Societies already offer products, while Qualtrics sells synthetic responses through its existing research platform.
